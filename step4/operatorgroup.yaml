@@ -1,0 +1,11 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  annotations:
+    olm.providedAPIs: OperandBindInfo.v1alpha1.operator.ibm.com,OperandConfig.v1alpha1.operator.ibm.com,OperandRegistry.v1alpha1.operator.ibm.com,OperandRequest.v1alpha1.operator.ibm.com
+  name: ns-b-og
+  namespace: ns-b
+spec:
+  targetNamespaces:
+  - ns-b
+  - ns-a

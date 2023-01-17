@@ -1,0 +1,9 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: ns-a-og
+  namespace: ns-a
+spec:
+  targetNamespaces:
+    - ns-a
+

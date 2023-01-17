@@ -1,0 +1,14 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: CatalogSource
+metadata:
+  name: cs-operators
+  namespace: openshift-marketplace
+spec:
+  displayName: CommonService Test Operators
+  publisher: IBM
+  sourceType: grpc
+  image: quay.io/daniel_fan/cs-catalog@sha256:1e7f42408bf5b7a4ff6713a0d40aa72191d38fbaf732039036aa7fe32fa243dd
+  updateStrategy:
+    registryPoll:
+      interval: 45m
+
